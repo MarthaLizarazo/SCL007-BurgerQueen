@@ -1,0 +1,24 @@
+[debug] [2019-03-06T01:48:27.245Z] ----------------------------------------------------------------------
+[debug] [2019-03-06T01:48:27.255Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Martha\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-03-06T01:48:27.257Z] CLI Version:   6.4.0
+[debug] [2019-03-06T01:48:27.257Z] Platform:      win32
+[debug] [2019-03-06T01:48:27.257Z] Node Version:  v11.3.0
+[debug] [2019-03-06T01:48:27.264Z] Time:          Tue Mar 05 2019 22:48:27 GMT-0300 (GMT-03:00)
+[debug] [2019-03-06T01:48:27.264Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-03-06T01:48:27.371Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-03-06T01:48:27.373Z] > authorizing via signed-in user
+[debug] [2019-03-06T01:48:27.374Z] [iam] checking project burguerqueen-fb95e for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-03-06T01:48:27.382Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-03-06T01:48:27.383Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-03-06T01:48:31.957Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-06T01:48:32.051Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/burguerqueen-fb95e:testIamPermissions  
+
+[debug] [2019-03-06T01:48:47.850Z] <<< HTTP RESPONSE 200
+[debug] [2019-03-06T01:48:47.853Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/burguerqueen-fb95e  
+ 
+[debug] [2019-03-06T01:49:15.562Z] Error: connect ETIMEDOUT 172.217.192.95:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1121:14)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 172.217.192.95:443
