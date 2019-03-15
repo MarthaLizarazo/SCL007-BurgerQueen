@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 
 class ButtonBreakfast extends Component {
+  getInitialState(){
+    return{
+      value:""
+    }
+  }
   render() {
     return (
         <div className="ButtonBreakfast">

@@ -8,9 +8,9 @@ class Header extends Component {
     return (
       <div className="Header">
          <div className="Logo">
-          <img src={logo} alt="logo"/>
-          <h2 className="text-right">BURGUER QUEEN</h2>
+         <img src={logo} alt="logo"/>
         </div>
+        <h4>BURGUER QUEEN</h4>
       </div>
     );
   }
