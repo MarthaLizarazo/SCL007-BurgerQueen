@@ -1,5 +1,6 @@
 {
   "projects": {
-    "burguerqueen": "burguerqueen-fb95e"
+    "burguerqueen": "burguerqueen-fb95e",
+    "default": "burguerqueen-fb95e"
   }
 }
