@@ -16,9 +16,8 @@ class Content extends Component {
    };
   }
   onClick1 = () => {
-   this.setState({
-     <ButtonDinner />
-   })
+   // this.props.onClick(e);
+    console.log("has presionado Desayuno")
   }
   render() {
     return (
