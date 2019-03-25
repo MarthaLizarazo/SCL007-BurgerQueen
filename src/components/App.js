@@ -7,12 +7,29 @@ import Content from './global/Content';
 import Footer from './global/Footer';
 
 class App extends Component {
+  
+  state = {
+    termino : ' '
+  }
+
+nomClient = (termino) => {
+  this.setState({
+    termino
+  })
+  // console.log(termino);
+}
+
   render() {
     return (
-      <div className="App">
-        <Header />
-        <Content />
-        <Footer />
+      <div className="app container">
+        <div className="jumbotrom">
+           <Header
+            nomClient = {this.nomClient}          
+          />
+           {this.state.termino}
+            <Content />
+            <Footer />
+          </div>
       </div>
     );
   }

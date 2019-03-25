@@ -2,9 +2,9 @@
 import React, { Component } from 'react';
 // Components
 import ButtonDinner from'../global/ButtonDinner';
-import OrderClient from'../global/OrderClient';
 import {desayunos, comida} from '../global/Menus.json';
 import './css/Content.css';
+import ButtonBreakfast from '../global/ButtonBreakfast';
 
 class Content extends Component {
   constructor(props){
@@ -13,30 +13,19 @@ class Content extends Component {
      value:'',
      desayunos,
      comida,
-     drawDinner: false,
-     drawBreakfast:false,
    };
-   this.drawDinner=this.drawDinner.bind(this);
-   this.drawBreakfast =this.drawBreakfast.bind(this);
   }
-  drawDinner(){
-    this.setState({
-      drawDinner: !this.state.drawDinner
-    })
-  }
-  drawBreakfast(){
-    this.setState({
-      drawBreakfast: !this.state.drawBreakfast
-    })
+  onClick1 = () => {
+   this.setState({
+     <ButtonDinner />
+   })
   }
   render() {
     return (
-      <div className="Content">
-            <OrderClient />
-              <button className="btn btn-danger btn-lg mr-5 m-4 p-3" onClick={this.drawDinner}>DESAYUNO</button>
-              <button className="btn btn-danger btn-lg mr-5 m-4 p-3" onClick={this.drawBreakfast}>ALMUERZO-CENA</button>
-              <h4 className="float-right mr-5">**** TU PEDIDO ****</h4>
-        </div>
+      <div className="Content container form-group col-md-12">
+        <button className="btn btn-danger btn-lg mr-5 m-4 p-3" onClick={(this.onClick1.bind(this))}>DESAYUNO</button>
+        <button className="btn btn-danger btn-lg mr-5 m-4 p-3" onClick={this.onClick}>ALMUERZO-CENA</button>
+      </div>
     );
   }
 }
