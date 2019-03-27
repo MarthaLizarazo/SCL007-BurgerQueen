@@ -2,3 +2,11 @@
 .Content {
   background-color:#eff7cc ;
 }
+
+.visible {
+  display: block;
+}
+
+.no-visible {
+  display: none;
+}

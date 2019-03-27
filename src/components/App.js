@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 // Components
 import Header from './global/Header';
-import Content from './global/Content';
+import ContentMenu from './global/ContentMenu';
 import Footer from './global/Footer';
 
 class App extends Component {
@@ -21,16 +21,19 @@ nomClient = (termino) => {
 
   render() {
     return (
-      <div className="app container">
-        <div className="jumbotrom">
+        <div className="app container">
+          <div className="jumbotrom">
            <Header
-            nomClient = {this.nomClient}          
-          />
-           {this.state.termino}
-            <Content />
+            nomClient = {this.nomClient} /> 
+            {this.state.termino}
+            <ul>
+            <ContentMenu name="DESAYUNOS" items = {['Cafe Americano $500','Cafe con Leche $700',
+            'Sandwich de jamón y queso $1000','Jugo natural $700']}/>
+            <ContentMenu name="ALMUERZOS-CENA"/>
+            </ul>
             <Footer />
           </div>
-      </div>
+        </div>
     );
   }
 }
