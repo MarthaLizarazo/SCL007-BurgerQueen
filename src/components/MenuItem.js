@@ -12,7 +12,7 @@ class MenuItem extends Component {
     return (
       <div className="Content container form-group col-md-12">
         <li> 
-        <a className="btn btn-danger btn-lg mr-5 m-4 p-3 href='#'">{this.props.name}</a>
+        <div><a href="/" className="btn btn-danger btn-lg mr-5 m-4 p-3">{this.props.name}</a></div>
         </li>
        
       </div>
@@ -20,5 +20,5 @@ class MenuItem extends Component {
   }
 }
 
-export default MenuItem;
+export default MenuItem
 

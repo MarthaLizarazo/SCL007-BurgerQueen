@@ -1,21 +1,19 @@
 // Dependencias
 import React, { Component } from 'react';
 // Components
-import MenuItem from '../global/MenuItem.js';
+import MenuItem from '../global/MenuItem';
 import {desayunos, comida} from '../global/Menus.json';
 import './css/Content.css';
+import ButtonDinner from './ButtonDinner';
 
 class ContentMenu extends Component {
 
 // inincializa el estado
   constructor(props){
   super(props);
-   this.state = {
-     visible : false,
-     value:'',
-     desayunos,
-     comida,
-   };
+   this.state={
+     visible : false
+   }
   }
 
   handleClick(event){
@@ -31,9 +29,7 @@ class ContentMenu extends Component {
         <li>
         <h3 className="btn btn-danger btn-lg mr-5 m-4 p-3" onClick={this.handleClick.bind(this)}>{this.props.name}</h3>
         <ul className={this.state.visible ? 'visible' : 'no-visible'}>
-        {this.props.items.map=(item) => { 
-          return <MenuItem name={item} key={item} />
-        }}
+        <ButtonDinner />
         </ul>
         </li>  
       </div>
@@ -42,5 +38,4 @@ class ContentMenu extends Component {
 }
 
 export default ContentMenu;
-//{this.props.items.map((item) => { 
 

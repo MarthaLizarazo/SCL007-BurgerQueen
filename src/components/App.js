@@ -26,14 +26,13 @@ nomClient = (termino) => {
            <Header
             nomClient = {this.nomClient} /> 
             {this.state.termino}
+            </div>
             <ul>
-            <ContentMenu name="DESAYUNOS" items = {['Cafe Americano $500','Cafe con Leche $700',
-            'Sandwich de jamón y queso $1000','Jugo natural $700']}/>
+            <ContentMenu name="DESAYUNOS"  items={['Cafe Americano $500','Cafe con Leche $700','Sandwich de jamón y queso $1000','Jugo natural $700']} />
             <ContentMenu name="ALMUERZOS-CENA"/>
             </ul>
             <Footer />
           </div>
-        </div>
     );
   }
 }
