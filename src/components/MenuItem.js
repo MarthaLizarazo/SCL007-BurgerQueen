@@ -20,5 +20,5 @@ class MenuItem extends Component {
   }
 }
 
-export default MenuItem
+export default MenuItem;
 

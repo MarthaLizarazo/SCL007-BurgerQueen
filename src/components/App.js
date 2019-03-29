@@ -5,6 +5,10 @@ import React, { Component } from 'react';
 import Header from './global/Header';
 import ContentMenu from './global/ContentMenu';
 import Footer from './global/Footer';
+import MenuItem from './global/MenuItem';
+import ButtonDinner from '../components/global/ButtonDinner';
+import ButtonBreakfast from '../components/global/ButtonBreakfast';
+
 
 class App extends Component {
   
@@ -28,8 +32,8 @@ nomClient = (termino) => {
             {this.state.termino}
             </div>
             <ul>
-            <ContentMenu name="DESAYUNOS"  items={['Cafe Americano $500','Cafe con Leche $700','Sandwich de jamón y queso $1000','Jugo natural $700']} />
-            <ContentMenu name="ALMUERZOS-CENA"/>
+            <ContentMenu name="DESAYUNOS" comida={<ButtonBreakfast/>} />
+            <ContentMenu name="ALMUERZOS-CENA" comida={<ButtonDinner/>} />
             </ul>
             <Footer />
           </div>
