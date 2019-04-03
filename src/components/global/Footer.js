@@ -6,7 +6,7 @@ class Footer extends Component {
     const {copyright='&copy; BurguerQueen'} = this.props;
     return (
       <div className="Footer">
-          <p dangerouslySetInnerHTML={{__html: copyright}} claseName="mb-4"/>
+          <p dangerouslySetInnerHTML={{__html: copyright}} claseName="mb-8"/>
         </div>
     );
   }

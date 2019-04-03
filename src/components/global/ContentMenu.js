@@ -1,12 +1,9 @@
 // Dependencias
 import React, { Component } from 'react';
 // Components
-import MenuItem from '../global/MenuItem';
 import {desayunos, comida} from '../global/Menus.json';
 import './css/Content.css';
-import ButtonDinner from './ButtonDinner';
-import ButtonBreakfast from './ButtonBreakfast';
-var opcion1;
+
 
 class ContentMenu extends Component {
 
@@ -28,9 +25,9 @@ class ContentMenu extends Component {
  
   render() {
     return (
-      <div className="Content container form-group col-md-12">
+      <div className="ContentMenu Content container form-group col-md-12">
         <li>
-        <h3 className="btn btn-danger btn-lg mr-5 m-4 p-3" onClick={this.handleClick.bind(this)}>{this.props.name}</h3>
+        <h3 className="btn btn-danger btn-lg mr-3 m-3 p-2" onClick={this.handleClick.bind(this)}>{this.props.name}</h3>
         <ul className={this.state.visible ? 'visible' : 'no-visible'}>
         {this.props.comida}
         </ul>

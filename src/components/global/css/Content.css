@@ -10,3 +10,7 @@
 .no-visible {
   display: none;
 }
+
+.ContentMenu li{
+  list-style-type: none ;
+}
