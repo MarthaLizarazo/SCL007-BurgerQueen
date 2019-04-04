@@ -8,13 +8,11 @@ class Order extends Component{
         }
     }
     render(){
-        let variable= '+++' + this.props.order + '+++';
-        console.log(variable);
+        let pedido= this.props.order;
+        console.log(pedido);
         return(
     <div>
-        {variable}
-
-        
+        {pedido}
     </div>
     
     );

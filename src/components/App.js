@@ -45,15 +45,22 @@ nomClient = (client) => {
         <div className="app container Header">
           <div className="jumbotrom text-white">
            <Header nomClient = {this.nomClient} /> 
-              <h3>Cliente: {this.state.termino} SU PEDIDO ES</h3>
+              <h3>Cliente: {this.state.client} SU PEDIDO ES</h3>
           </div>
-          <div className="Content">
+          <div className="container Content">
+          <div className="row col-md-8">
             <ul>
               <ContentMenu name="DESAYUNOS" comida={<ButtonBreakfast handleClick={this.handleClick}/>} />
               <ContentMenu name="ALMUERZOS-CENA" comida={<ButtonDinner handleClick={this.handleClick}/>} />
             </ul>
-          </div>
+            
+            <div className="">
+            <ul>
             <Order order={this.state.order} />  
+            </ul>
+            </div>
+            </div>
+          </div>
           <div className="Footer">
             <Footer />
           </div>

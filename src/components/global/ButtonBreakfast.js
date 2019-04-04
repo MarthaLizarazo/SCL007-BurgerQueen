@@ -16,7 +16,7 @@ class ButtonBreakfast extends Component {
       e.preventDefault();
      // console.log(e.target.value); //target : propiedades boton
       let list = e.target.value;
-      this.state.minuta.push(list); // guardando el valor a mi minuta
+      this.state.minuta.push(list); // guardando el valor en mi minuta
      //console.log(this.state.minuta);
       this.props.handleClick(this.state.minuta); //enviando las propiedades de mi munuta al padre App
     }
